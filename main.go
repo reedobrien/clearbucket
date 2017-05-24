@@ -38,6 +38,7 @@ func main() {
 		if err != nil {
 			log.Fatalln(err)
 		}
+		verify = strings.TrimSpace(verify)
 		if verify != bname {
 			fmt.Println("Input didn't match, exiting")
 			os.Exit(1)
